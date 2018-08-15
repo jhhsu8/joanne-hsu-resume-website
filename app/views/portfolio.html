@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-0 col-sm-3" id="sidebar">
+            <div class="affix">
+                <ul class="list-unstyled" ng-repeat="webApp in webApps">
+                    <li>
+                        <a href="" ng-click="gotoAnchor(webApp.css)">{{webApp.name}}</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled" ng-repeat="javaApp in javaApps">
+                    <li>
+                        <a href="" ng-click="gotoAnchor(javaApp.css)">{{javaApp.name}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-9" id="content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-9" id="banner">
+                    <h1>Joanne Hsu</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-9 col-sm-9" id="portfolio">
+                    <h2>Web Development Projects</h2>
+                    <ul class="media-list" ng-repeat="webApp in webApps">
+                        <li class="media" id="{{webApp.css}}">
+                            <div class="media-left">
+                                <a href="{{webApp.link}}" target="_blank"><img class="d-flex mr-3" ng-src="{{webApp.image}}" alt="{{webApp.name}}"></a>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading"><a href="{{webApp.link}}" target="_blank">{{webApp.name}} <i class="fa fa-external-link"></i></a></h5>
+                                <p class="design">{{webApp.design}}</p>
+                                <p>{{webApp.description}}</p>
+                                <p><a href="{{webApp.code}}" target="_blank"><img ng-src="./images/github.png" alt="github"></a></p>
+                            </div>
+                        </li>
+                        <hr>
+                    </ul>
+                    <ul class="media-list" ng-repeat="javaApp in javaApps">
+                        <li class="media" id="{{javaApp.css}}">
+                            <div class="media-left">
+                                <img class="d-flex mr-3" ng-src="{{javaApp.image}}" alt="{{javaApp.name}}">
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">{{javaApp.name}}</h5>
+                                <p>&nbsp;</p>
+                                <p>{{javaApp.description}}</p>
+                                <p><a href="{{javaApp.code}}" target="_blank"><img ng-src="./images/github.png" alt="github"></a></p>
+                            </div>
+                        </li>
+                        <hr>
+                    </ul>
+                    <p id="backtotop"><a href="" ng-click="gotoAnchor('portfolio')">Back to Top</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9" id="footer">
+                    <p>&copy; Joanne Hsu 2018 (All images are from Google search)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

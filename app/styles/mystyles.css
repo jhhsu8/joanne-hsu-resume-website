@@ -1,0 +1,131 @@
+body {
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.row {
+    display: flex;
+}
+
+/* Banner area */
+h1 {
+    color: #fdb515;
+}
+
+#banner {
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+
+/* Sidebar area */
+#sidebar {
+    z-index: 1; 
+    color: #fff;
+    margin-top: 50px; 
+}
+
+#sidebar a {
+    color: #fff; 
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    background-color: #fd8e15;
+}
+
+.affix {
+    padding: 20px 10px 0px 10px;
+    background-image: url(../images/berkeley.jpg);
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 278px;
+    height: 100%;
+}
+
+/* Content area */
+#content {
+    margin-top: 50px;
+}
+
+
+h2, #contact {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#resume_heading {
+    padding-bottom: 0px;
+}
+
+
+#home, #portfolio, #resume, #references {
+    padding: 0px 10px 0px 15px;
+    background-color: #e4ecf2;
+    flex: 1;
+}
+
+#home a, #resume a, #portfolio a, #references a, #home a:hover, #resume a:hover, #portfolio a:hover, #references a:hover {
+    color: blue;
+}
+
+#references, #backtotop {
+    text-align: center;
+}
+
+#objective, #skills, #education, #experience, #awards, #publications {
+    font-weight: bold;
+    padding: 2px;
+    background-color: #75a4bd;
+    color: #fff;
+}
+
+.design {
+    font-weight: bold;
+}
+
+hr {
+    border-color: gray;
+}
+
+.date, .grade {
+    float: right;
+}
+
+h2, h5, #web-development, #leap-forward, #perseverance, .school, .work, .date, .courses, .quote {
+    font-weight: bold;
+}
+
+.disabledButton {
+    opacity: 0.35; 
+}
+
+/* Footer area */
+#footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #bccddf;
+    width: 100%;
+}
+
+/* Sidebar and media images responsive to window size */
+@media (max-width: 767px) {
+    #sidebar, .media-left {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .affix {
+        width: 230px;
+    }
+}
+
+@media (max-width: 991px) {
+    .affix {
+        width: 180px;
+    }
+}
