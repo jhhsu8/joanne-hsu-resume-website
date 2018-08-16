@@ -1,0 +1,1 @@
+My resume website was created in HTML5, CSS, Bootstrap, and AngularJS using Bower with Gulp.  It contains a brief introduction of myself, a portfolio of my web development projects, a resume and two reference letters.
